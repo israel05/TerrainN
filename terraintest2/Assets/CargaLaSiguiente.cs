@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class CargaLaSiguiente : MonoBehaviour
 {
+
+
+    //creo un objeto antes de todo con awake
+    //creo un objeto permanetne a todo el juego
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
