@@ -6,6 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [Tooltip("En metros por segundo")][SerializeField] float xSpeed= 4f;
+    [Tooltip("desde el centro hasta salir de cámara")] [SerializeField] float posibleStrafe = 20f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,12 @@ public class Player : MonoBehaviour
     {
         float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffsetThisFrame = xThrow * xSpeed *Time.deltaTime;
-        print(xOffsetThisFrame);
+        float rawXNewXPos = transform.localPosition.x + xOffsetThisFrame;
+        float posicionRestringida = Mathf.Clamp(rawXNewXPos, -posibleStrafe, posibleStrafe);
+        transform.localPosition = new Vector3(
+            posicionRestringida, 
+            transform.localPosition.y, 
+            transform.localPosition.z);
         
     }
 }
