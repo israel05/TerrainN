@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
         
     }
 
+
     private void MoverEnXeY()
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
@@ -73,5 +74,19 @@ public class Player : MonoBehaviour
             posicionRestringidaX,
             posicionRestringidaY,
             transform.localPosition.z);
+    }
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+
+        print("PLayer colided with smth");
+        print(collision.gameObject.name);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("PLayer TRIGGERD with smth");
+        print(other.name);
     }
 }
