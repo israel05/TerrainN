@@ -147,6 +147,7 @@
     <Compile Include="Assets\Assets pack\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Assets pack\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Assets pack\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Enemigo.cs" />
     <Compile Include="Assets\scripts\CargaLaSiguiente.cs" />
     <Compile Include="Assets\scripts\ColisionHandler.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
