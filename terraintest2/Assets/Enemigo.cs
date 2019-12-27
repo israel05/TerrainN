@@ -1,19 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
     // Start is called before the first frame update
+
+   
+
     void Start()
     {
-        
+        AddNonTriggerBoxColidder();       
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void AddNonTriggerBoxColidder()
     {
-        
+        Collider boxCollider = gameObject.AddComponent<BoxCollider>(); //añadimos los coliders en creacción
+        boxCollider.isTrigger = false;
     }
 
     private void OnParticleCollision(GameObject other)
