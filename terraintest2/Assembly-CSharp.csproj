@@ -148,7 +148,8 @@
     <Compile Include="Assets\Assets pack\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Assets pack\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\scripts\CargaLaSiguiente.cs" />
-    <Compile Include="Assets\scripts\Player.cs" />
+    <Compile Include="Assets\scripts\ColisionHandler.cs" />
+    <Compile Include="Assets\scripts\PlayerController.cs" />
     <Compile Include="Assets\scripts\ponMusica.cs" />
     <None Include="Assets\Assets pack\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Assets pack\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />

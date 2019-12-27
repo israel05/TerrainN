@@ -12,7 +12,7 @@ public class CargaLaSiguiente : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("LoadFirstScene", 10f); // Espera dos segundos antes de lanzar la carga
+        Invoke("LoadFirstScene", 6f); // Espera dos segundos antes de lanzar la carga
     }
 
     void LoadFirstScene()
