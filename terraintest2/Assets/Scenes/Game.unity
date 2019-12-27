@@ -622,7 +622,7 @@ Transform:
   - {fileID: 1837845429}
   - {fileID: 1644486320}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263266087
 GameObject:
@@ -5471,7 +5471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329903531 stripped
 GameObject:
@@ -5491,19 +5491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &329903535
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329903531}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6466485, y: 0.63312775, z: 0.09151085}
-  m_Center: {x: 0, y: 0.00000047683716, z: 0.00000023841858}
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
 --- !u!1 &351892797
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,19 +5591,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &423948836
-BoxCollider:
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
+--- !u!1 &451698132
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423948832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664847, y: 0.6331279, z: 0.091510795}
-  m_Center: {x: 0, y: 0.0000038146973, z: -0.00000023841858}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451698133}
+  m_Layer: 0
+  m_Name: NacidosEnRunning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451698133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451698132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -700, y: 70, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484316714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 484316714, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
@@ -5735,19 +5743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &565858488
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565858484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664847, y: 0.63312775, z: 0.09151077}
-  m_Center: {x: 0, y: 0, z: 0.00000011920929}
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
 --- !u!1 &572385183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,7 +6014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &750870303
 PrefabInstance:
@@ -6217,19 +6214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &860335161
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860335157}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664847, y: 0.6331279, z: 0.091510795}
-  m_Center: {x: 0, y: 0, z: 0.000000029802322}
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
 --- !u!1 &949055884
 GameObject:
   m_ObjectHideFlags: 0
@@ -6343,7 +6329,7 @@ Transform:
   m_Children:
   - {fileID: 1171386842}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -6888,19 +6874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1191620395
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191620391}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664847, y: 0.6331279, z: 0.091510795}
-  m_Center: {x: 0, y: 0, z: 0.00000011920929}
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
 --- !u!1001 &1212453114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7005,7 +6980,7 @@ Transform:
   - {fileID: 1505013788}
   - {fileID: 1423148946}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247124405
 GameObject:
@@ -7181,19 +7156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1381421663
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1381421659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6466485, y: 0.63312775, z: 0.09151086}
-  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000059604645}
+  deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
+  parent: {fileID: 451698133}
 --- !u!1 &1384715718
 GameObject:
   m_ObjectHideFlags: 0
@@ -7343,7 +7307,7 @@ Transform:
   - {fileID: 1826997954}
   - {fileID: 1122397935}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1423148946 stripped
 Transform:

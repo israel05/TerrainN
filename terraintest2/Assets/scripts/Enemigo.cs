@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
+
+    [SerializeField] GameObject deathFX; //la animaciónde muerte
+    [SerializeField] Transform parent;
     // Start is called before the first frame update
 
-   
+
 
     void Start()
     {
@@ -23,7 +26,8 @@ public class Enemigo : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        print("Particulas colisionando con enemigo " + gameObject.name);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;    
         Destroy(gameObject);
        
     }
