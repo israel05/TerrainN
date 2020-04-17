@@ -5863,6 +5863,12 @@ MonoBehaviour:
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
+--- !u!1 &570020588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5249050847178524356, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 2165655113895121091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &572385183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6516,7 +6522,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 114
+  field of view: 84.9
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -6542,7 +6548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -700, y: 70, z: 10}
+  m_LocalPosition: {x: -700, y: 69.79, z: 10.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1171386842}
@@ -7201,6 +7207,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1236213527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5249050846094363933, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 2165655113895121091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1247124405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9024,7 +9036,7 @@ PrefabInstance:
     - target: {fileID: 5249050846094363933, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
         type: 3}
       propertyPath: m_Name
-      value: BalitinasIZQ
+      value: ArmaIZQ
       objectReference: {fileID: 0}
     - target: {fileID: 5249050846094363906, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
         type: 3}
@@ -9054,7 +9066,7 @@ PrefabInstance:
     - target: {fileID: 5249050847178524356, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
         type: 3}
       propertyPath: m_Name
-      value: BalitinasDRCH
+      value: ArmaDRCH
       objectReference: {fileID: 0}
     - target: {fileID: 5249050847178524379, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
         type: 3}
@@ -9081,6 +9093,18 @@ PrefabInstance:
       propertyPath: CollisionModule.maxCollisionShapes
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 1171386843, guid: 004d9975d5ce5df4eaa9f9ac79a66a23, type: 3}
+      propertyPath: armas.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1171386843, guid: 004d9975d5ce5df4eaa9f9ac79a66a23, type: 3}
+      propertyPath: armas.Array.data[0]
+      value: 
+      objectReference: {fileID: 1236213527}
+    - target: {fileID: 1171386843, guid: 004d9975d5ce5df4eaa9f9ac79a66a23, type: 3}
+      propertyPath: armas.Array.data[1]
+      value: 
+      objectReference: {fileID: 570020588}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 004d9975d5ce5df4eaa9f9ac79a66a23, type: 3}
 --- !u!1001 &2498125726950981177

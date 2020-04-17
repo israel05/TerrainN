@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionYawFactor = 4f;
     [SerializeField] float controlYawFactor = -6f;
     [SerializeField] float controlRollFactor = -6f;
+
+    [SerializeField] GameObject[] armas;
+
     private float xThrow;
     private float yThrow;
     bool isControlEnabled= true;
@@ -38,6 +41,7 @@ public class PlayerController : MonoBehaviour
         {
             MoverEnXeY();
             MoverEnRotacion();
+            Disparar();
         }
        
 
@@ -101,5 +105,31 @@ public class PlayerController : MonoBehaviour
         print(collision.gameObject.name);
     }
 
+    void Disparar() { 
+        if (CrossPlatformInputManager.GetButton("Fuego"))
+        {
+            ActivarArmas();
+        } else
+        {
+            DesactivarArmas();
+        }
+   
     
+    }
+
+    private void DesactivarArmas()
+    {
+       foreach(GameObject arma in armas)
+        {
+            arma.SetActive(false);
+        }
+    }
+
+    private void ActivarArmas()
+    {
+        foreach(GameObject arma in armas)
+        {
+            arma.SetActive(true);
+        }
+    }
 }
