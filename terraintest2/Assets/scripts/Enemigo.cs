@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    [SerializeField] int puntosPorEnemigo = 14;
-
+    [SerializeField] int golpes = 6;
+    [SerializeField] int puntosPorEnemigo = 10;
     [SerializeField] GameObject deathFX; //la animaciónde muerte
     [SerializeField] Transform parent;
     // Start is called before the first frame update
@@ -32,10 +32,25 @@ public class Enemigo : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;  
-        Destroy(gameObject);
+        ProcesarGolpeContrEnemigo();
+        if (golpes <= 1)
+        {
+            MatarEnemigo();
+        }
+    }
+
+    private void ProcesarGolpeContrEnemigo()
+    {
         scoreBoard.ScoreHit(puntosPorEnemigo);
-       
+        golpes--; //tu cantidad de golpes aguantables
+
+        
+    }
+
+    private void MatarEnemigo()
+    {
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
     }
 }
