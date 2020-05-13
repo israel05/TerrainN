@@ -5491,6 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -5592,6 +5593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -5860,6 +5862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -6437,6 +6440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -7098,6 +7102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -7387,6 +7392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0efd752114e43f4c87884c653c5e2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  golpes: 6
   puntosPorEnemigo: 14
   deathFX: {fileID: 8105310703947068907, guid: 3f06dc18e276de540a0c8541f9b4c79a, type: 3}
   parent: {fileID: 0}
@@ -9062,6 +9068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.maxCollisionShapes
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5249050846094363906, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
+        type: 3}
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5249050847178524356, guid: 004d9975d5ce5df4eaa9f9ac79a66a23,
         type: 3}
